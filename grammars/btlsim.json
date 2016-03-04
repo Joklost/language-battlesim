@@ -19,7 +19,7 @@
             "include": "#comments"
         },
         {
-            "match": "\\b(Type|Namespace|Declare|Dcl|Var|End|Case|Continue|Default|Do|Loop|Else|For|Goto|If|Elseif|Then|End if|Return|Next|Function|Action|Until|Select|Wend|With|While|as)\\b",
+            "match": "\\b(Type|Namespace|Declare|Dcl|Var|End|Case|Continue|Default|Do|Loop|Else|For|Goto|If|ElseIf|Then|End if|Return|Next|Function|Action|Until|Select|Wend|With|While|as)\\b",
             "name": "keyword.control.freebasic"
         },
         {
@@ -162,7 +162,7 @@
             "include": "#pragma-mark"
         },
         {
-            "begin": "^\\s*#\\s*(Assert|Libpath|Lang|Define|Defined|Elseif|Else|If|Ifdef|Ifndef|Line|Pragma|Undef|Print|Error|Inclib|Macro|Endmacro)\\b",
+            "begin": "^\\s*#\\s*(Assert|Libpath|Lang|Define|Defined|ElseIf|Else|If|Ifdef|Ifndef|Line|Pragma|Undef|Print|Error|Inclib|Macro|Endmacro)\\b",
             "captures": {
                 "1": {
                     "name": "keyword.control.import.freebasic"
