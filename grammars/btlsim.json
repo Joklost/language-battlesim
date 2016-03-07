@@ -19,7 +19,7 @@
             "include": "#comments"
         },
         {
-            "match": "\\b(Foreach|In|Type|Namespace|Declare|Dcl|Var|End|Case|Continue|Default|Do|Loop|Else|For|Goto|If|ElseIf|Then|End if|Return|Next|Function|Action|Until|Select|Wend|With|While|as)\\b",
+            "match": "\\b(Or|And|Begin|Program|Foreach|In|Type|Namespace|Declare|Dcl|Var|End|Case|Continue|Default|Do|Loop|Else|For|Goto|If|ElseIf|Then|End if|Return|Next|Function|Action|Until|Select|Wend|With|While|as)\\b",
             "name": "keyword.control.freebasic"
         },
         {
@@ -198,7 +198,7 @@
             "include": "#block"
         },
         {
-            "begin": "(?x)\n    \t\t(?:  ^                                 # begin-of-line\n    \t\t  |  \n    \t\t     (?: (?= \\s )           (?<!Else|New|Return) (?<=\\w)      #  or word + space before name\n    \t\t       | (?= \\s*[A-Za-z_] ) (?<!&&)       (?<=[*&>])   #  or type modifier before name\n    \t\t     )\n    \t\t)\n    \t\t(\\s*) (?!(Foreach|In|While|For|Do|If|Else|Select|Case|Enum|Return|Sizeof|[cr]?iterate)\\s*\\()\n    \t\t(\n    \t\t\t(?: [A-Za-z_][A-Za-z0-9_]*+ | :: )++ |                  # actual name\n    \t\t\t(?: (?<=operator) (?: [-*&<>=+!]+ | \\(\\) | \\[\\] ) )  # if it is a C++ operator\n    \t\t)\n    \t\t \\s*(?=\\()",
+            "begin": "(?x)\n    \t\t(?:  ^                                 # begin-of-line\n    \t\t  |  \n    \t\t     (?: (?= \\s )           (?<!Else|New|Return) (?<=\\w)      #  or word + space before name\n    \t\t       | (?= \\s*[A-Za-z_] ) (?<!&&)       (?<=[*&>])   #  or type modifier before name\n    \t\t     )\n    \t\t)\n    \t\t(\\s*) (?!(Or|And|Begin|Program|Foreach|In|While|For|Do|If|Else|Select|Case|Enum|Return|Sizeof|[cr]?iterate)\\s*\\()\n    \t\t(\n    \t\t\t(?: [A-Za-z_][A-Za-z0-9_]*+ | :: )++ |                  # actual name\n    \t\t\t(?: (?<=operator) (?: [-*&<>=+!]+ | \\(\\) | \\[\\] ) )  # if it is a C++ operator\n    \t\t)\n    \t\t \\s*(?=\\()",
             "beginCaptures": {
                 "1": {
                     "name": "punctuation.whitespace.function.leading.freebasic"
