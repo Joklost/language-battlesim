@@ -19,7 +19,7 @@
             "include": "#comments"
         },
         {
-            "match": "\\b(OR|AND|EQUALS|GREATER|THAN|LESSER|Begin|Program|Foreach|In|Type|Namespace|Declare|Dcl|Var|End|Case|Continue|Default|Do|Loop|Else|For|Goto|If|ElseIf|Then|End if|Return|Next|Function|Action|Until|Switch|Wend|With|While|as)\\b",
+            "match": "\\b(OR|AND|EQUALS|GREATERTHAN|GREATERTHANEQUALS|LESSERTHANEQUALS|LESSERTHAN|Begin|Program|Foreach|In|Type|Namespace|Declare|Dcl|Var|End|Case|Continue|Default|Do|Loop|Else|For|Goto|If|ElseIf|Then|End if|Return|Next|Function|Action|Until|Switch|Wend|With|While|as)\\b",
             "name": "keyword.control.freebasic"
         },
         {
