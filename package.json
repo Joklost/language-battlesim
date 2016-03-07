@@ -1,6 +1,6 @@
 {
   "name": "language-btlsim",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "BtlSim Syntax Highlightning for Atom",
   "repository": "https://github.com/Joklost/language-btlsim",
   "license": "GNU",
