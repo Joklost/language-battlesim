@@ -1,0 +1,107 @@
+'scopeName': 'source.battlesim'
+'name': 'BattleSim'
+'fileTypes': [
+  'bs'
+]
+
+'patterns': [
+    {   # Numerics
+        'match': '\\b(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))\\b'
+        'name': 'constant.numeric.battlesim'
+    },
+    {   # Function id()
+        'match': '\\b(Function)\\s+(\\w?)\\s*\\(.*\\)'
+        'captures':
+            '1':
+                'name': 'keyword.control.battlesim'
+            '2':
+                'name': 'entity.name.function.battlesim'
+
+        'name': 'meta.function.battlesim'
+    },
+    {   # Strings
+        'begin': '\"'
+        'beginCaptures':
+            '0':
+                'name': 'punctuation.definition.string.begin.battlesim'
+        'end': '\"'
+        'endCaptures':
+            '0':
+                'name': 'punctuation.definition.string.end.battlesim'
+        'name': 'string.quoted.double.battlesim'
+        'patterns': [
+            {
+                'match': '\\\\(\\\\|[abefnprtv\'\"?]|[0-3]\\d{,2}|[4-7]\\d?|x[a-fA-F0-9]{,2}|u[a-fA-F0-9]{,4}|U[a-fA-F0-9]{,8})'
+                'name': 'constant.character.escape.battlesim'
+            }
+        ]
+    },
+    {   # Logical operators
+        'match': '\\b(OR|AND|EQUALS|GREATERTHAN|GREATERTHANEQUALS|LESSTHANEQUALS|LESSTHAN)\\b'
+        'name': 'keyword.control.battlesim'
+    },
+    {   # Keywords
+        'match': '\\b(Include|Define|Function|Begin|Program|Foreach|In|Type|Declare|End|Case|Default|Do|Else|For|If|Then|Return|Switch|While|as)\\b'
+        'name': 'keyword.control.battlesim'
+    },
+    {
+        'match': '\\b(NULL|true|false)\\b'
+        'name': 'constant.language.battlesim'
+    },
+    {   # comments
+        'captures':
+            '1':
+                'name': 'meta.toc-list.banner.block.battlesim'
+        'match': '^/\\\* =(\\s*.*?)\\s*= \\*/$\\n?'
+        'name': 'comment.block.battlesim'
+    },
+    {
+        'begin': '/\\*'
+        'beginCaptures':
+            '0':
+                'name': 'punctuation.definition.comment.end.battlesim'
+        'end': '\\*/'
+        'endCaptures':
+            '0':
+                'name': 'punctuation.definition.comment.end.battlesim'
+        'name': 'comment.block.battlesim'
+    },
+    {
+        'match': '\\*/.*\\n'
+        'name': 'invalid.illegal.stray-comment-end.battlesim'
+    },
+    {
+        'begin': '//'
+        'beginCaptures':
+            '0':
+                'name': 'punctuation.definition.comment.battlesim'
+        'end': '\\n|(?=\\?>)'
+        'name': 'comment.line.double-slash.battlesim'
+    },
+    {   # function call
+        'captures':
+            '1':
+                'name': 'punctuation.whitespace.function-call.leading.battlesim'
+            '2':
+                'name': 'support.function.any-method.battlesim'
+            '3':
+                'name': 'punctuation.definition.parameters.battlesim'
+        'match': '(?x) (?: (?= \\s )  (?:(?<=Else|New|Return) | (?<!\\w)) (\\s+))?\n\t\t\t(\\b \n\t\t\t\t(?!(Case|While|For|Do|If|Else|Switch|Catch|Enumerate|Return|Sizeof|[cr]?iterate)\\s*\\()(?:(?!NS)[A-Za-z_][A-Za-z0-9_]*+\\b | :: )++                  # actual name\n\t\t\t)\n\t\t\t \\s*(\\()'
+        'name': 'meta.function-call.battlesim'
+    },
+#    {
+#        'captures':
+#            '1':
+#                'name': 'variable.other.battlesim'
+#            '2':
+#                'name': 'punctuation.definition.parameters.battlesim'
+#        'name': 'meta.initialization.battlesim'
+#  }
+    {   # Types
+        'match': '\\b(Number|String|Boolean)\\b'
+        'name': 'support.type.sys-types.battlesim'
+    },
+    {
+
+    }
+]
