@@ -1,2 +1,2 @@
-# language-btlsim
-Atom Syntax Highlightning for BtlSim
+# language-battlesim
+Atom Syntax Highlightning for BattleSim
