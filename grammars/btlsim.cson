@@ -41,7 +41,7 @@
         'name': 'keyword.control.battlesim'
     },
     {   # Keywords
-        'match': '\\b(Include|Define|Function|Begin|Program|Foreach|In|Type|Declare|End|Case|Default|Do|Else|For|If|Then|Return|Switch|While|as)\\b'
+        'match': '\\b(Include|Define|Function|Begin|Program|Foreach|In|Type|Declare|End|Case|Default|Do|Else|For|If|Then|Return|Switch|While|as|DownTo|To)\\b'
         'name': 'keyword.control.battlesim'
     },
     {
