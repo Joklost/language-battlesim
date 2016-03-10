@@ -1,8 +1,8 @@
 {
-  "name": "language-btlsim",
+  "name": "language-battlesim",
   "version": "2.0.1",
-  "description": "BtlSim Syntax Highlightning for Atom",
-  "repository": "https://github.com/Joklost/language-btlsim",
+  "description": "BattleSim Syntax Highlightning for Atom",
+  "repository": "https://github.com/Joklost/language-battlesim",
   "license": "GNU",
   "engines": {
     "atom": ">0.50.0"
