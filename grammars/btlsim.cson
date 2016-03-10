@@ -98,7 +98,7 @@
 #        'name': 'meta.initialization.battlesim'
 #  }
     {   # Types
-        'match': '\\b(Number|String|Boolean)\\b'
+        'match': '\\b(Number|String|Boolean|Void)\\b'
         'name': 'support.type.sys-types.battlesim'
     },
     {
