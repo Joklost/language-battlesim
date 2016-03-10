@@ -10,7 +10,7 @@
         'name': 'constant.numeric.battlesim'
     },
     {   # Function id()
-        'match': '\\b(Function)\\s+(\\w?)\\s*\\(.*\\)'
+        'match': '\\b(Function)\\s+(\\w+)\\s*\\(.*\\)'
         'captures':
             '1':
                 'name': 'keyword.control.battlesim'
