@@ -1,6 +1,6 @@
 {
   "name": "language-battlesim",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "BattleSim Syntax Highlightning for Atom",
   "repository": "https://github.com/Joklost/language-battlesim",
   "license": "GNU",
