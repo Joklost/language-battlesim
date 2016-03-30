@@ -89,16 +89,8 @@
         'match': '(?x) (?: (?= \\s )  (?:(?<=Else|New|Return) | (?<!\\w)) (\\s+))?\n\t\t\t(\\b \n\t\t\t\t(?!(Case|While|For|Do|If|Else|Switch|Catch|Enumerate|Return|Sizeof|[cr]?iterate)\\s*\\()(?:(?!NS)[A-Za-z_][A-Za-z0-9_]*+\\b | :: )++                  # actual name\n\t\t\t)\n\t\t\t \\s*(\\()'
         'name': 'meta.function-call.battlesim'
     },
-#    {
-#        'captures':
-#            '1':
-#                'name': 'variable.other.battlesim'
-#            '2':
-#                'name': 'punctuation.definition.parameters.battlesim'
-#        'name': 'meta.initialization.battlesim'
-#  }
     {   # Types
-        'match': '\\b(Number|String|Boolean|Void|List)\\b'
+        'match': '\\b(Number|String|Boolean|Void|List|Group|Platoon|Force|Coord|Degree)\\b'
         'name': 'support.type.sys-types.battlesim'
     },
     {
