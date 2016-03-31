@@ -41,7 +41,7 @@
         'name': 'keyword.control.battlesim'
     },
     {   # Keywords
-        'match': '\\b(Declarations|Include|Define|Function|Begin|Program|Foreach|In|Type|Declare|End|Case|Default|Do|Else|For|If|Then|Return|Switch|While|as|DownTo|To|of)\\b'
+        'match': '\\b(Declarations|Include|Define|Function|Begin|Program|Foreach|in|Type|Declare|End|Case|Default|Do|Else|For|If|Then|Return|Switch|While|as|DownTo|To|of)\\b'
         'name': 'keyword.control.battlesim'
     },
     {
@@ -90,7 +90,7 @@
         'name': 'meta.function-call.battlesim'
     },
     {   # Types
-        'match': '\\b(Number|String|Boolean|Void|List|Group|Platoon|Force|Coord|Degree|Terrain)\\b'
+        'match': '\\b(Soldier|Number|String|Boolean|Void|List|Group|Platoon|Force|Coord|Degree|Terrain)\\b'
         'name': 'support.type.sys-types.battlesim'
     },
     {
