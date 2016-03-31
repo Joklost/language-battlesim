@@ -41,7 +41,7 @@
         'name': 'keyword.control.battlesim'
     },
     {   # Keywords
-        'match': '\\b(Declarations|Include|Define|Function|Begin|Program|Foreach|in|Type|Declare|End|Case|Default|Do|Else|For|If|Then|Return|Switch|While|as|DownTo|To|of)\\b'
+        'match': '\\b(Simulation|Step|Interrups|Declarations|Include|Define|Function|Begin|Program|Foreach|in|Type|Declare|End|Case|Default|Do|Else|For|If|Then|Return|Switch|While|as|DownTo|To|of)\\b'
         'name': 'keyword.control.battlesim'
     },
     {
@@ -86,7 +86,7 @@
                 'name': 'support.function.any-method.battlesim'
             '3':
                 'name': 'punctuation.definition.parameters.battlesim'
-        'match': '(?x) (?: (?= \\s )  (?:(?<=Else|New|Return) | (?<!\\w)) (\\s+))?\n\t\t\t(\\b \n\t\t\t\t(?!(Simulation|Step|Interrups|Case|While|For|Do|If|Else|Switch|Catch|Enumerate|Return|Sizeof|[cr]?iterate)\\s*\\()(?:(?!NS)[A-Za-z_][A-Za-z0-9_]*+\\b | :: )++                  # actual name\n\t\t\t)\n\t\t\t \\s*(\\()'
+        'match': '(?x) (?: (?= \\s )  (?:(?<=Else|New|Return) | (?<!\\w)) (\\s+))?\n\t\t\t(\\b \n\t\t\t\t(?!(Case|While|For|Do|If|Else|Switch|Catch|Enumerate|Return|Sizeof|[cr]?iterate)\\s*\\()(?:(?!NS)[A-Za-z_][A-Za-z0-9_]*+\\b | :: )++                  # actual name\n\t\t\t)\n\t\t\t \\s*(\\()'
         'name': 'meta.function-call.battlesim'
     },
     {   # Types
