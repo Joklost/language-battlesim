@@ -37,7 +37,7 @@
         ]
     },
     {   # Logical operators
-        'match': '\\b(OR|AND|EQUALS|GREATERTHAN|GREATERTHANEQUALS|LESSTHANEQUALS|LESSTHAN)\\b'
+        'match': '\\b(NOT|OR|AND)\\b'
         'name': 'keyword.control.battlesim'
     },
     {   # Keywords
