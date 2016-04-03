@@ -90,7 +90,7 @@
         'name': 'meta.function-call.battlesim'
     },
     {   # Types
-        'match': '\\b(Integer|Soldier|Number|String|Boolean|Void|List|Group|Platoon|Force|Coord|Degree|Terrain)\\b'
+        'match': '\\b(Integer|Soldier|Decimal|String|Boolean|Void|List|Group|Platoon|Force|Coord|Degree|Terrain)\\b'
         'name': 'support.type.sys-types.battlesim'
     },
     {
